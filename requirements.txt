@@ -1,0 +1,7 @@
+anthropic
+openai
+
+tavily-python
+sentence-transformers
+numpy
+langgraph
