@@ -25,6 +25,13 @@ Everything runs in **Google Collab**, no installation required.
 2. You do **not** need an API key to start. Every notebook has canned replies in `"mock "` mode.
 3. You can set `PROVIDER = "anthropic"` or `"openai"` in the setup cell. Make sure to add your key (in Colab, the kwy icon in the left sidebar). An Agent is pattern, not a vendor specific service.
 
+## Data boundary
+
+Keep these inputs away from an unapproved API path:
+- Unpublished and confidential peer-review material.
+- Personal identifiable, participant, student, health or human subject data
+- Grades, personnel and financial records, API keys and access restricted files.
+
 ## Repository layout
 
 ```
