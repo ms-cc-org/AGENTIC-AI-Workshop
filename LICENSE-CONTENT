@@ -1,30 +1,13 @@
-# Instructional Content License
+## License
 
-Agentic AI for Research, Higher Education, and Administration
+This repository uses separate licenses for code and instructional content.
 
-Copyright © 2026 [COPYRIGHT HOLDER]
+- Source code and executable notebook cells are licensed under the
+  [MIT License](LICENSE-CODE).
+- Workshop explanations, slides, exercises, diagrams, prompts, and other
+  non-code materials are licensed under the
+  [Creative Commons Attribution 4.0 International License](LICENSE-CONTENT).
 
-Except where otherwise noted, the instructional content in this repository—
-including workshop explanations, exercises, slides, diagrams, prompts, and
-other non-code materials—is licensed under the Creative Commons Attribution
-4.0 International License (CC BY 4.0).
+Copyright © 2026 [COPYRIGHT HOLDER].
 
-- [License summary](https://creativecommons.org/licenses/by/4.0/)
-- [Legal code](https://creativecommons.org/licenses/by/4.0/legalcode.en)
-
-## Attribution
-
-When reusing or adapting this material, provide appropriate credit, link to
-the license, and indicate whether changes were made.
-
-Suggested attribution:
-
-> *Agentic AI for Research, Higher Education, and Administration* by
-> [AUTHOR OR ORGANIZATION], licensed under CC BY 4.0. Adapted from
-> https://github.com/ms-cc-org/AGENTIC-AI-Workshop.
-
-## Exceptions
-
-Third-party materials, datasets, logos, trademarks, model outputs, and other
-content identified as externally sourced remain subject to their respective
-licenses and terms.
+Third-party materials remain subject to their respective licenses and terms.
