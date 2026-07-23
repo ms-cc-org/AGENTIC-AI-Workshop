@@ -880,7 +880,7 @@ Date:
 
 # After validation
 
-Submit this completed report to the project manager.
+Submit this completed report to the project approver.
 
 The notebook author will:
 
@@ -890,4 +890,4 @@ The notebook author will:
 4. Attach author-test evidence.
 5. Return the notebook for retesting when required.
 
-The project manager or designated technical reviewer will verify the corrections and close the GitHub issues.
+The project approver or designated technical reviewer will verify the corrections and close the GitHub issues.
