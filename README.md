@@ -1,120 +1,189 @@
-# Agentic AI for Research, Higher Education, and Administration
+# Choosing the Right AI Architecture for Research, Higher Education, and Administration
 
-A hands-on introductory workshop for researchers, faculty, staff, research-support professionals, and graduate students who want to understand how AI agents work and where they may be useful.
+> **Build AI agents. More importantly, learn when *not* to.**
 
-Participants will build small agent workflows in Google Colab. The workshop focuses on fundamental concepts and transparent Python examples—not advanced agent frameworks or production deployment.
+Artificial intelligence is rapidly changing how research, teaching, and administration are done. Along with large language models has come a new buzzword: **AI agents**.
 
-> **Project status:** This workshop is under active development. Notebooks should be considered ready for delivery only after their code, instructions, and exercises have completed end-to-end learner validation.
+Researchers are hearing about agentic search, research assistants, coding agents, multi-agent systems, and autonomous workflows. But what actually makes something an *agent*? And when is an agent genuinely useful instead of unnecessarily complex?
 
-## Workshop goals
+This workshop answers those questions through a series of hands-on Google Colab notebooks designed for researchers, faculty, research support professionals, administrators, and graduate students.
 
-Most people have used an AI chatbot: provide a prompt and receive a response. An agent extends that interaction by operating within a loop, using tools, responding to results, maintaining relevant state, and continuing until it reaches a stopping condition.
+Rather than teaching a particular framework or vendor, this workshop focuses on the **fundamental concepts** behind modern agentic systems. Participants progressively build increasingly capable AI systems while learning how to reason about when a chatbot, workflow, or agent is the appropriate solution.
 
-By the end of the workshop, participants will be able to:
+---
 
-- Explain the differences among a chatbot, a predefined workflow, and an AI agent.
-- Describe the principal components of an agent workflow.
-- Explain how agents use tools, state, and memory.
-- Build and modify a small agent workflow.
-- Identify appropriate agent use cases in research, higher education, and administration.
-- Recognize situations in which a chatbot or predefined workflow is preferable to an agent.
-- Identify risks and appropriate points for human review.
+# Learning Objectives
 
-## Intended audience
+By the end of this workshop, participants will be able to:
+
+- Explain the differences between a chatbot, a workflow, and an AI agent.
+- Describe how AI agents use planning, tools, memory, and state.
+- Build simple agent workflows using transparent Python examples.
+- Identify situations where an AI agent provides value—and where it does not.
+- Evaluate common risks, limitations, and appropriate human oversight.
+- Apply these concepts to research, teaching, and administrative workflows.
+
+---
+
+# Intended Audience
 
 This workshop is designed for:
 
-- Faculty and researchers
-- Research-support professionals
-- Higher-education staff and administrators
+- Faculty
+- Researchers
+- Research software engineers
+- Research computing professionals
 - Graduate students
+- Higher education staff and administrators
 
-Participants may have minimal programming experience. Basic familiarity with Python is helpful but not required.
+No prior experience with AI agents is required.
 
-## What participants will build
+Basic Python familiarity is helpful but not necessary.
 
-The workshop consists of four notebooks. Each notebook can run independently, while the series progressively develops the components of a small research assistant.
+---
 
-### Notebook 1: Chatbot, workflow, and agent
+# Workshop Philosophy
 
-`notebooks/01_chatbot_vs_agent.ipynb`
+Most workshops teach **how to use a particular AI framework.**
 
-Compare three approaches side by side:
+This workshop teaches **how to think about AI systems.**
 
-- A chatbot that produces one response from supplied context
-- A predefined workflow whose steps are selected by the developer
-- A tool-using agent that can select its next action at runtime
+The concepts introduced here are intentionally framework-independent so they remain useful as AI tools continue to evolve.
 
-**Participant outcome:** Explain why these systems behave differently and when each approach is appropriate.
+Rather than asking:
 
-### Notebook 2: Tool-using agent
+> *"How do I build an agent?"*
 
-`notebooks/02_tool_using_agent.ipynb`
+participants learn to ask:
 
-Explore how an agent can interact with tools for:
+> **"Should this problem be solved with a chatbot, a workflow, or an AI agent?"**
+
+That engineering judgment is often more valuable than learning any individual framework.
+
+---
+
+# Workshop Roadmap
+
+The workshop consists of four notebooks that progressively build a simple research assistant.
+
+## Notebook 1 — Chatbot vs. Workflow vs. Agent
+
+Build three systems that solve the same problem:
+
+- A chatbot
+- A predefined workflow
+- A tool-using AI agent
+
+Participants compare how each system behaves and learn why agents make different decisions than traditional chatbots.
+
+**Key concepts**
+
+- Prompting
+- Workflows
+- Planning
+- Decision making
+
+---
+
+## Notebook 2 — Giving an Agent Tools
+
+Extend the agent by allowing it to interact with external tools.
+
+The notebook demonstrates:
 
 - Web search
 - Document retrieval
-- Structured output generation
+- Structured tool calls
+- Tool selection
+- Tool execution
 
-The notebook shows how a model selects a tool, supplies arguments, receives the result, and decides what to do next.
+Participants observe how an agent decides which tool to call and how tool results influence later decisions.
 
-**Participant outcome:** Explain how tools extend an agent’s capabilities and identify the risks of giving an agent access to external systems.
+---
 
-### Notebook 3: Research assistant
+## Notebook 3 — Building a Research Assistant
 
-`notebooks/03_research_assistant.ipynb`
+Combine planning, retrieval, and synthesis into a complete research assistant.
 
-Build a small research assistant that:
+The assistant will:
 
-1. Accepts a research question.
-2. Clarifies the requested outcome.
-3. Creates a task plan.
-4. Retrieves relevant information.
-5. Organizes and synthesizes the findings.
-6. Produces a summary report with source information.
+1. Accept a research question.
+2. Clarify the requested task.
+3. Create a plan.
+4. Retrieve relevant information.
+5. Organize findings.
+6. Produce a summarized report.
 
-**Participant outcome:** Build and inspect a complete, end-to-end agent workflow.
+Participants inspect every step of the workflow rather than treating the model as a black box.
 
-### Notebook 4: Memory and multi-step tasks
+---
 
-`notebooks/04_multistep_memory.ipynb`
+## Notebook 4 — Memory and Multi-Step Reasoning
 
-Extend the assistant with:
+Enhance the assistant with:
 
-- Task state
-- Context retention
 - Short-term memory
-- Multi-step execution
+- Task state
+- Multi-step reasoning
+- Human review checkpoints
 - Stopping conditions
-- Human-review checkpoints
 
-**Participant outcome:** Explain how an agent maintains relevant context across steps and how memory differs from model training or permanent knowledge.
+Participants learn how agents maintain context across multiple decisions and why memory differs from model training.
 
-## Capstone exercise
+---
 
-Participants will design an agent for a research or administrative use case. The capstone emphasizes system design and responsible use rather than implementation complexity.
+# Capstone Exercise
 
-| Field               | Description                                                   |
-| ------------------- | ------------------------------------------------------------- |
-| Goal                | What should the agent accomplish?                             |
-| Users               | Who will interact with it?                                    |
-| Inputs              | What information will it receive?                             |
-| Tools               | What capabilities or external systems will it need?           |
-| Memory              | What context must persist across steps?                       |
-| Outputs             | What should it produce?                                       |
-| Risks               | What could fail, cause harm, or produce an unreliable result? |
-| Human review points | Where must a person review or approve its work?               |
+Participants design an AI solution for a research or administrative task.
 
-Participants should be prepared to explain why an agent is appropriate for the use case—or why a simpler chatbot or predefined workflow would be safer and more efficient.
+Rather than immediately building an agent, they first determine the most appropriate architecture.
 
-## Setup
+For each scenario they evaluate:
 
-The notebooks are designed to run in **Google Colab**, so no local installation is required.
+| Question | Description |
+|-----------|-------------|
+| Goal | What problem is being solved? |
+| Users | Who will use the system? |
+| Inputs | What information is available? |
+| Outputs | What should the system produce? |
+| Tools | What external capabilities are required? |
+| Memory | What information must persist? |
+| Risks | What could fail or produce incorrect results? |
+| Human Review | Where should a person remain in the loop? |
 
-### Start without an API key
+The objective is not simply to build an agent—but to justify whether an agent is the right solution.
 
-Every notebook supports a scripted demonstration mode:
+---
+
+# Why This Workshop Is Different
+
+Many AI workshops focus on learning a particular framework or coding tool.
+
+This workshop focuses on **understanding agentic systems themselves**.
+
+Participants learn durable concepts that transfer across platforms, including:
+
+- Planning
+- Tool use
+- Memory
+- State management
+- Human oversight
+- Evaluation
+- Responsible AI design
+
+These concepts remain useful regardless of which AI framework or provider becomes popular.
+
+---
+
+# Running the Workshop
+
+The notebooks are designed to run in **Google Colab**.
+
+No local installation is required.
+
+## Mock Mode (Recommended)
+
+Every notebook runs in a fully scripted demonstration mode:
 
 ```python
 PROVIDER = "mock"
@@ -122,150 +191,107 @@ PROVIDER = "mock"
 
 Mock mode:
 
-- Does not call an external model.
-- Does not require an API key.
-- Uses predefined tool calls and responses.
-- Allows participants to inspect the mechanics before using a live service.
+- Requires no API key
+- Makes no external model calls
+- Produces deterministic outputs
+- Allows participants to inspect every step of the workflow
 
-Mock mode demonstrates program flow. It does not evaluate the quality or variability of a live model.
+This makes the workshop suitable for classrooms, training sessions, and institutions without paid AI accounts.
 
-### Use a live model
+---
 
-Participants who want to use a live model may select a supported provider:
+## Live Providers (Optional)
+
+Participants may optionally run the notebooks using:
 
 ```python
 PROVIDER = "openai"
 ```
 
-or:
+or
 
 ```python
 PROVIDER = "anthropic"
 ```
 
-A corresponding API key and an account with available usage are required. API usage may incur charges.
+Live execution requires the appropriate API credentials and may incur usage costs.
 
-In Google Colab:
+---
 
-1. Open the **Secrets** panel using the key icon in the left sidebar.
-2. Add the required provider secret.
-3. Grant the notebook permission to access the secret.
-4. Change `PROVIDER` in the setup cell.
-5. Restart the runtime and run the notebook from the beginning.
+# Responsible AI
 
-Never paste an API key directly into a notebook cell, output, screenshot, or committed file.
+This workshop uses only public, synthetic, de-identified, or institutionally approved information.
 
-Provider APIs and model names may change. Consult the provider’s current documentation if a configured model is no longer available.
-
-## Local use
-
-Local execution is optional. A compatible Python environment and the packages listed in `requirements.txt` are required.
-
-```bash
-git clone https://github.com/ms-cc-org/AGENTIC-AI-Workshop.git
-cd AGENTIC-AI-Workshop
-python -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements.txt
-```
-
-Windows activation commands differ by shell. Google Colab is the recommended environment for workshop participants.
-
-## Repository structure
-
-```text
-AGENTIC-AI-Workshop/
-├── README.md
-├── requirements.txt
-├── LICENSE-CODE
-├── LICENSE-CONTENT
-├── slides/
-├── notebooks/
-│   ├── 01_chatbot_vs_agent.ipynb
-│   ├── 02_tool_using_agent.ipynb
-│   ├── 03_research_assistant.ipynb
-│   └── 04_multistep_memory.ipynb
-├── datasets/
-├── prompts/
-└── resources/
-```
-
-- `slides/` — Workshop presentation materials
-- `notebooks/` — Participant notebooks
-- `datasets/` — Public, synthetic, or de-identified sample data
-- `prompts/` — Reusable workshop prompt examples
-- `resources/` — References and supplementary materials
-- `requirements.txt` — Dependencies for optional local execution
-
-## Responsible use and data boundaries
-
-Use only public, synthetic, de-identified, or institutionally approved information during this workshop.
-
-Do not send the following information to an AI provider unless your institution has explicitly approved the provider, account, configuration, and intended use:
+Participants should **not** upload:
 
 - Unpublished research
-- Confidential peer-review material
 - Personally identifiable information
-- Student educational records or grades
-- Participant, patient, health, or human-subject data
-- Personnel or financial records
-- Confidential institutional, grant, or partner information
-- API keys, passwords, access tokens, or restricted files
+- Student records
+- Human-subject data
+- Patient information
+- Confidential institutional information
+- API keys or credentials
+- Restricted datasets
 
-Removing a person’s name may not be sufficient to de-identify a record. When uncertain, stop and consult the appropriate privacy, information-security, research-compliance, institutional-review, or legal office.
+Throughout the workshop we discuss where human oversight should remain part of the workflow and where deterministic software may be a better solution than an autonomous agent.
 
-## Important limitations
+---
 
-The notebooks are educational demonstrations, not production systems.
+# Important Limitations
 
-Agent outputs may be incomplete, inaccurate, unsupported, or inconsistent. Tool use does not guarantee factual correctness. Participants should:
+These notebooks are educational demonstrations—not production systems.
 
-- Verify important claims against authoritative sources.
-- Review citations and retrieved documents.
-- Inspect tool inputs and outputs.
-- Require human approval before consequential actions.
-- Use deterministic code where the required steps are already known.
-- Avoid granting an agent unnecessary permissions.
+Participants should always:
 
-## Validation standard
+- Verify important claims.
+- Review retrieved evidence.
+- Inspect tool outputs.
+- Keep humans involved in consequential decisions.
+- Avoid granting unnecessary permissions.
+- Prefer deterministic software when the required workflow is already known.
 
-A workshop notebook is considered ready for delivery only when:
+---
 
-- The exact committed version runs from beginning to end in a clean Google Colab runtime.
-- Mock mode works without API credentials.
-- Each documented live-provider path has been tested or clearly identified as unverified.
-- Code, tool names, examples, outputs, and explanatory text are internally consistent.
-- Prerequisites and setup instructions match the actual participant experience.
-- A reviewer other than the author has completed the notebook from a learner’s perspective.
+# Validation Standard
+
+A notebook is considered ready for delivery only when:
+
+- It runs from beginning to end in a clean Google Colab environment.
+- Mock mode functions without API credentials.
+- Every documented provider path has been validated or explicitly marked as unverified.
+- Documentation matches implementation.
+- Internal links and examples are correct.
+- A reviewer other than the author has completed the notebook from a learner's perspective.
 - Validation findings have been corrected and retested.
 
-Technical problems and documentation defects should be reported through the repository’s [GitHub Issues](https://github.com/ms-cc-org/AGENTIC-AI-Workshop/issues).
+---
 
-## Contributing
+# Contributing
 
-Contributions and issue reports are welcome.
+Contributions are welcome.
 
-When proposing a change:
+When proposing changes:
 
-1. Describe the problem or learning need.
-2. Keep the material appropriate for participants with minimal programming experience.
-3. Avoid unnecessary frameworks or scope expansion.
-4. Test the affected notebook from a clean runtime.
-5. Include relevant validation evidence.
-6. Submit the change for review before treating it as delivery-ready.
+- Keep the material accessible to beginners.
+- Avoid unnecessary framework-specific complexity.
+- Test notebooks from a clean runtime.
+- Include validation evidence.
+- Submit changes for review before considering them complete.
 
-Do not commit API keys, restricted data, participant information, or confidential materials.
+Never commit:
 
-## License
+- API keys
+- Sensitive data
+- Confidential information
+- Restricted research materials
 
-This repository uses separate licenses for software and instructional content.
+---
 
-### Code
+# License
 
-Unless otherwise noted, source code and executable notebook cells are licensed under the [MIT License](https://opensource.org/license/mit). See `LICENSE-CODE` for the complete terms.
+Software and instructional content are licensed separately.
 
-### Instructional content
+- **Code** is licensed under the MIT License.
+- **Instructional content** is licensed under the Creative Commons Attribution 4.0 International License.
 
-Unless otherwise noted, workshop explanations, exercises, diagrams, and other non-code materials are licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). See `LICENSE-CONTENT` for details.
-
-Third-party libraries, datasets, trademarks, logos, model outputs, and externally sourced materials remain subject to their respective licenses and terms.
+Third-party libraries, datasets, and other external resources remain subject to their respective licenses.
