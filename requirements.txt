@@ -1,7 +1,6 @@
 anthropic
 openai
-
+ddgs
 tavily-python
 sentence-transformers
 numpy
-langgraph

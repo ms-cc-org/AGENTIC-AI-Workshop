@@ -142,6 +142,7 @@ Build and understand an end-to-end AI-assisted research workflow.
 ---
 
 ## Notebook 4 — Memory and Multi-Step Reasoning
+`notebooks/04_memory_multistep.ipynb`
 
 Extend the research assistant with:
 
@@ -254,6 +255,50 @@ This workshop uses only:
 - Institutionally approved datasets
 
 Participants should **not** upload:
+Provider APIs and model names may change. Consult the provider’s current documentation if a configured model is no longer available.
+
+## Local use
+
+Local execution is optional. A compatible Python environment and the packages listed in `requirements.txt` are required.
+
+```bash
+git clone https://github.com/ms-cc-org/AGENTIC-AI-Workshop.git
+cd AGENTIC-AI-Workshop
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+```
+
+Windows activation commands differ by shell. Google Colab is the recommended environment for workshop participants.
+
+## Repository structure
+
+```text
+AGENTIC-AI-Workshop/
+├── README.md
+├── requirements.txt
+├── LICENSE
+├── Images/
+├── notebooks/
+│   ├── 01_chatbot_vs_agent.ipynb
+│   ├── 02_tool_using_agent.ipynb
+│   ├── 03_research_assistant.ipynb
+│   └── 04_memory_multistep.ipynb
+├── datasets/
+└── docs/
+```
+
+- `notebooks/` — Participant notebooks
+- `datasets/` — Public, synthetic, or de-identified sample data
+- `docs/` — Project documentation and validation protocols
+- `Images/` — Diagrams and workshop illustrations
+- `requirements.txt` — Dependencies for optional local execution
+
+## Responsible use and data boundaries
+
+Use only public, synthetic, de-identified, or institutionally approved information during this workshop.
+
+Do not send the following information to an AI provider unless your institution has explicitly approved the provider, account, configuration, and intended use:
 
 - Unpublished research
 - Human-subject or patient data
@@ -343,8 +388,14 @@ Never commit:
 # License
 
 Unless otherwise noted:
+Software and instructional content are licensed separately.
+Unless otherwise noted, source code and executable notebook cells are licensed under the [MIT License](https://opensource.org/license/mit). See `LICENSE` for the complete terms.
 
 - Source code is licensed under the MIT License.
 - Instructional content is licensed under the Creative Commons Attribution 4.0 International License.
 
 Third-party libraries, datasets, model outputs, trademarks, and external materials remain subject to their respective licenses.
+Third-party libraries, datasets, and other external resources remain subject to their respective licenses.
+Unless otherwise noted, workshop explanations, exercises, diagrams, and other non-code materials are licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). See `LICENSE` for details.
+
+Third-party libraries, datasets, trademarks, logos, model outputs, and externally sourced materials remain subject to their respective licenses and terms.
