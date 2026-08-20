@@ -1,6 +1,4 @@
-anthropic
-openai
-ddgs
-tavily-python
-sentence-transformers
-numpy
+anthropic>=0.40,<1.0
+ddgs>=6.0
+sentence-transformers>=3.0
+numpy>=1.26

@@ -127,11 +127,10 @@ Combine planning, retrieval, and synthesis into a complete research workflow.
 Participants build a research assistant that can:
 
 1. Accept a research question
-2. Clarify the desired outcome
-3. Create a task plan
-4. Retrieve supporting information
-5. Organize findings
-6. Produce a summarized report with citations
+2. Create a task plan
+3. Retrieve supporting information
+4. Organize findings
+5. Produce a summarized report with citations
 
 Rather than treating the AI model as a black box, participants inspect each step of the workflow.
 
@@ -142,7 +141,6 @@ Build and understand an end-to-end AI-assisted research workflow.
 ---
 
 ## Notebook 4 — Memory and Multi-Step Reasoning
-`notebooks/04_memory_multistep.ipynb`
 
 Extend the research assistant with:
 
@@ -170,6 +168,7 @@ For each scenario, participants evaluate:
 
 | Question | Description |
 |-----------|-------------|
+| Architecture | Chatbot, workflow, or agent? One sentence justification. |
 | Goal | What problem should be solved? |
 | Users | Who interacts with the system? |
 | Inputs | What information is available? |
@@ -255,6 +254,15 @@ This workshop uses only:
 - Institutionally approved datasets
 
 Participants should **not** upload:
+
+- Unpublished research
+- Human-subject or patient data
+- Personally identifiable information
+- Student educational records
+- Confidential institutional information
+- Grant-sensitive material
+- API keys or credentials
+
 Provider APIs and model names may change. Consult the provider’s current documentation if a configured model is no longer available.
 
 ## Local use
@@ -346,23 +354,6 @@ Technical defects and documentation issues should be tracked through GitHub Issu
 
 ---
 
-# Repository Structure
-
-```
-AGENTIC-AI-Workshop/
-├── README.md
-├── requirements.txt
-├── LICENSE
-├── notebooks/
-├── datasets/
-├── docs/
-└── Images/
-```
-
-The README should always reflect the actual repository contents.
-
----
-
 # Contributing
 
 Contributions are welcome.
@@ -387,15 +378,7 @@ Never commit:
 
 # License
 
-Unless otherwise noted:
-Software and instructional content are licensed separately.
-Unless otherwise noted, source code and executable notebook cells are licensed under the [MIT License](https://opensource.org/license/mit). See `LICENSE` for the complete terms.
-
-- Source code is licensed under the MIT License.
-- Instructional content is licensed under the Creative Commons Attribution 4.0 International License.
-
-Third-party libraries, datasets, model outputs, trademarks, and external materials remain subject to their respective licenses.
-Third-party libraries, datasets, and other external resources remain subject to their respective licenses.
-Unless otherwise noted, workshop explanations, exercises, diagrams, and other non-code materials are licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). See `LICENSE` for details.
+- Source code and executable notebook cells are licensed under the [MIT License](https://opensource.org/license/mit). See `LICENSE` for the complete terms.
+- Workshop explanations, exercises, diagrams, and other non-code materials are licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 
 Third-party libraries, datasets, trademarks, logos, model outputs, and externally sourced materials remain subject to their respective licenses and terms.
