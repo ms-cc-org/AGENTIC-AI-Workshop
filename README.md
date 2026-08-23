@@ -69,7 +69,9 @@ To keep the workshop focused on concepts rather than provider-specific implement
 
 # Workshop Roadmap
 
-The workshop consists of four notebooks that progressively build a simple research assistant.
+The workshop consists of three core notebooks and one optional self-study notebook.
+
+Each notebook includes its own exercise section. Participants work through the exercises during the session; no separate capstone activity is required.
 
 ---
 
@@ -140,49 +142,23 @@ Build and understand an end-to-end AI-assisted research workflow.
 
 ---
 
-## Notebook 4 — Memory and Multi-Step Reasoning
+## Notebook 4 — Memory and Multi-Step Reasoning *(Optional — Self-Study)*
 
-Extend the research assistant with:
+This notebook is not required to complete the workshop. It is self-study material for participants who want to go deeper after the core session.
+
+Participants who continue will explore:
 
 - Short-term memory
-- Task state
-- Multi-step execution
+- Long-term memory with persistent storage
+- Multi-step tasks where tools depend on each other through memory
 - Human-review checkpoints
-- Stopping conditions
+- Stopping conditions and guardrails
 
-Participants learn how AI systems maintain context across multiple steps and why memory differs from model training.
+Participants learn how AI systems maintain context across multiple steps, why memory differs from model training, and where human oversight matters most.
 
 **Participant outcome**
 
 Explain how memory enables more sophisticated AI workflows while recognizing when human oversight should remain part of the process.
-
----
-
-# Capstone Exercise
-
-Participants design an AI solution for a research or administrative problem.
-
-Instead of immediately building an AI agent, they first determine the most appropriate architecture.
-
-For each scenario, participants evaluate:
-
-| Question | Description |
-|-----------|-------------|
-| Architecture | Chatbot, workflow, or agent? One sentence justification. |
-| Goal | What problem should be solved? |
-| Users | Who interacts with the system? |
-| Inputs | What information is available? |
-| Outputs | What should the system produce? |
-| Tools | What external capabilities are required? |
-| Memory | What information must persist? |
-| Risks | What could fail or produce incorrect results? |
-| Human Review | Where should a person remain in the loop? |
-
-Participants should be able to justify why the problem is best solved with:
-
-- A chatbot
-- A deterministic workflow
-- An AI agent
 
 ---
 
