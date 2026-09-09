@@ -7,4 +7,4 @@
 anthropic==1.4.0            # All notebooks (live mode)
 ddgs==9.16.0                # NB2 only (web search tool)
 sentence-transformers==6.0.1  # NB3 required; NB4 optional (Step 4)
-numpy==2.5.3                # NB3, NB4
+numpy==2.2.6                # NB3, NB4 — capped at <2.3 (Colab's numba 0.61.2 requires numpy<2.3)
