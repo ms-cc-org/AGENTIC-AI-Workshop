@@ -31,7 +31,7 @@ Approach the notebooks as someone who:
 - Has little or no experience building AI agents
 - Has a Google account
 - Has not previously seen the notebook implementation
-- May not have an OpenAI or Anthropic API key
+- May not have an Anthropic API key
 - Expects to begin in mock mode without credentials
 
 If your technical experience helps you overcome a problem, record that. A beginner may not be able to use the same workaround.
@@ -269,7 +269,7 @@ Describe one specific problem.
 - Browser:
 - Operating system:
 - Colab/Python version:
-- Provider: Mock / OpenAI / Anthropic / Not applicable
+- Provider: Mock / Anthropic / Not applicable
 - Model, if applicable:
 
 ## Location
@@ -596,14 +596,11 @@ Verify:
 
 Verify:
 
-- [ ] `openai` installs.
 - [ ] `anthropic` installs.
 - [ ] `ddgs` installs.
-- [ ] `tavily-python` installs if documented.
 - [ ] The repository is cloned into the expected location.
 - [ ] Rerunning setup does not create a nested repository.
 - [ ] The notebook ends in the correct directory.
-- [ ] `OPENAI_API_KEY` is used consistently.
 - [ ] `ANTHROPIC_API_KEY` is used consistently.
 
 Open a Blocker issue for a clean-runtime setup failure.

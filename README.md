@@ -328,6 +328,8 @@ A notebook is considered ready for learner delivery only when:
 
 Technical defects and documentation issues should be tracked through GitHub Issues.
 
+See [docs/validation/learner-validation-protocol.md](docs/validation/learner-validation-protocol.md) for the full validator checklist.
+
 ---
 
 # Contributing
