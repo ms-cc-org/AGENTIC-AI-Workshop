@@ -170,9 +170,21 @@ No local installation is required.
 
 ---
 
-## Mock Mode (Recommended)
+## Live Model (Recommended)
 
-Every notebook supports a fully scripted demonstration mode.
+The workshop uses **Anthropic** as the reference LLM provider. A live API key is strongly recommended so participants can see the model make real decisions: choosing tools, generating responses, and varying its output across runs.
+
+```python
+PROVIDER = "anthropic"
+```
+
+An Anthropic API key is required. Typical workshop usage costs well under $1 (Claude Haiku, fractions of a cent per call). A $5 credit balance is more than enough.
+
+---
+
+## Mock Mode (Fallback)
+
+Every notebook also supports a fully scripted mock mode for participants who do not have an API key.
 
 ```python
 PROVIDER = "mock"
@@ -182,27 +194,10 @@ Mock mode:
 
 - Requires no API key
 - Makes no external model calls
-- Produces deterministic outputs
+- Produces deterministic, pre-scripted outputs
 - Allows participants to inspect every step of the workflow
-- Supports classroom instruction without paid AI accounts
 
-Mock mode demonstrates **system behavior**, not model quality.
-
----
-
-## Live Model (Optional)
-
-Participants who wish to experiment with a live model may optionally use **Anthropic**.
-
-```python
-PROVIDER = "anthropic"
-```
-
-An Anthropic API key is required.
-
-API usage may incur charges.
-
-The workshop is fully functional in mock mode and does **not** require a paid account.
+Mock mode demonstrates **system behavior**, not model quality. Responses are predefined — the model does not run, does not make decisions, and does not select tools. Participants in mock mode can follow along and understand the architecture, but they will not see a model genuinely reason or choose.
 
 ---
 
@@ -210,7 +205,7 @@ The workshop is fully functional in mock mode and does **not** require a paid ac
 
 1. Open the notebook in Google Colab.
 2. Open the **Secrets** panel.
-3. Add your Anthropic API key (optional).
+3. Add your Anthropic API key (strongly recommended).
 4. Grant notebook access to the secret.
 5. Select the desired provider.
 6. Restart the runtime.
