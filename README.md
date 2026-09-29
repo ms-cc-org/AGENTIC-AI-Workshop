@@ -23,7 +23,7 @@ The goal is not simply to teach participants how to build an agent. It is to hel
 By the end of this workshop, participants will be able to:
 
 - Explain the differences between chatbots, deterministic workflows, and AI agents.
-- Describe how AI agents use planning, tools, memory, and state.
+- Describe how AI agents use planning and tools to complete tasks.
 - Build simple tool-using AI systems in Google Colab.
 - Explain how AI agents make decisions during task execution.
 - Identify situations where an AI agent is appropriate—and where a simpler solution is preferable.
@@ -75,7 +75,7 @@ Each notebook includes its own exercise section. Participants work through the e
 
 ---
 
-## Notebook 1 — Chatbot vs. Workflow vs. Agent
+## Notebook 1 — Chatbot, Workflow, or Agent?
 
 Compare three different approaches to solving the same problem:
 
@@ -99,7 +99,7 @@ Explain why chatbots, workflows, and agents behave differently and identify when
 
 ---
 
-## Notebook 2 — Giving an Agent Tools
+## Notebook 2 — The Tool-Using Agent
 
 Extend the AI agent by connecting it to external tools.
 
@@ -122,7 +122,7 @@ Understand how tool use extends an agent's capabilities and recognize the risks 
 
 ---
 
-## Notebook 3 — Building a Research Assistant
+## Notebook 3 — The Research Assistant
 
 Combine planning, retrieval, and synthesis into a complete research workflow.
 
@@ -142,7 +142,7 @@ Build and understand an end-to-end AI-assisted research workflow.
 
 ---
 
-## Notebook 4 — Memory and Multi-Step Reasoning *(Optional — Self-Study)*
+## Notebook 4 — Memory and Multi-Step Tasks *(Optional — Self-Study)*
 
 This notebook is not required to complete the workshop. It is self-study material for participants who want to go deeper after the core session.
 
